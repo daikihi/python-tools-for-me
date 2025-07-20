@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# 今のところJupyter Notebook を使う予定はないけど念の為
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VSCode specific
+.vscode/
