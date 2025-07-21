@@ -8,6 +8,8 @@
 
 入力ファイル、dictonary ファイルは、各々任意の数置くことができます。
 
+対象文字コードはとりあえず、 `utf-8` になってます。
+
 ## 最初にやること
 
 まず、python3 を前提とし、python3 はインストールされているものとします。
@@ -15,6 +17,9 @@
 ```bash
 cd file-read-and-change-words
 python3 -m venv .env
+mkdir inputs
+mkdir outputs
+mkdir dictionary
 ```
 
 ## 実行時にすること
@@ -25,6 +30,8 @@ python3 -m venv .env
 cd file-read-and-change-words
 source .env/bin/activate
 ```
+
+ファイルはなければ作るなので、特に消さなくても大丈夫かもしれません。毎回消しておくと、どれが新しく作られたか見やすいかもしれません。
 
 ## 実行方法
 
