@@ -20,7 +20,18 @@ source ./env/bin/activate
 
 # 実行時
 
+```
+python3 masking-file.py input_file_name output_file_name masking_columns_csv
+```
+
+- input_file_name : 入力ファイル名
+- output_file_name : 出力ファイル名、既に同一ファイル名が存在する場合には、勝手に上書きされ前のデータはなくなります
+- masking_columns_csv : マスキングするカラム名：０からカウントしてください
+
+input_file_name とoutput_file_name が同じ場合は、安全のため動かなくしてあります
+
 ```bssh
+python3 masking-file.py ./sample-csv.csv output_20250816.csv 1,2,3,4,5
 ```
 
 # サンプルの出典
