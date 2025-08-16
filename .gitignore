@@ -21,3 +21,4 @@ build/
 
 # VSCode specific
 .vscode/
+.env
