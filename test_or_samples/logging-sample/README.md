@@ -9,7 +9,8 @@ Logging のサンプルを書いてみた
  ```bash
 $ cd test_or_samples/logging-sample 
 $ python3 logging-sample-main.py 
-This LOG is WARNING level
-This LOG is ERROR level
-This LOG is CRITICAL level
+2025-09-14 11:20:43 - INFO - This LOG is INFO level
+2025-09-14 11:20:43 - WARNING - This LOG is WARNING level
+2025-09-14 11:20:43 - ERROR - This LOG is ERROR level
+2025-09-14 11:20:43 - CRITICAL - This LOG is CRITICAL level
  ```
