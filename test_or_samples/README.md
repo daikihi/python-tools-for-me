@@ -4,4 +4,4 @@
 
 ## logging-sample
 
-Logger を使ったサンプルコードを置いておく
+Logger を使ったサンプルコードを置いておく。
