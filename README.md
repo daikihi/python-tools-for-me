@@ -27,7 +27,17 @@ CSV ファイルから、特定のカラムを SAMPLE に置換します
 
 下の画像のように、緑色の `CODE` ボタンから、 `Download ZIP` を選んでください。そしたら、全部まるっと `ZIP` 形式でダウングレードされると思います。
 
-（ `ZIP` の解答は、適当にやってください。わからないです。　）
-
 <img width="1122" height="650" alt="image" src="https://github.com/user-attachments/assets/6b4a650b-9a94-4d17-80d2-ee4538cf2e61" />
+
+Chrome でDownload した前提で書きます。ターミナル（PowerShell） で次のコマンドを実行してください。
+
+'''powershell
+cd .\Downloads\
+tar -xf .\python-tools-for-me-main.zip
+'''
+
+上記の様なコマンドを実行することにより、'python-tools-for-me-main' というフォルダができていると思います。
+
+
+
 
