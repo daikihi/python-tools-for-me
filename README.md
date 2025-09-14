@@ -34,9 +34,10 @@ Chrome でDownload した前提で書きます。ターミナル（PowerShell）
 ```powershell
 cd .\Downloads\
 tar -xf .\python-tools-for-me-main.zip
-```%
+```
 
 上記の様なコマンドを実行することにより、`python-tools-for-me-main` というフォルダができていると思います。
+
 
 
 
