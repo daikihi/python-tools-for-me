@@ -31,12 +31,13 @@ CSV ファイルから、特定のカラムを SAMPLE に置換します
 
 Chrome でDownload した前提で書きます。ターミナル（PowerShell） で次のコマンドを実行してください。
 
-'''powershell
+```powershell
 cd .\Downloads\
 tar -xf .\python-tools-for-me-main.zip
-'''
+```%
 
-上記の様なコマンドを実行することにより、'python-tools-for-me-main' というフォルダができていると思います。
+上記の様なコマンドを実行することにより、`python-tools-for-me-main` というフォルダができていると思います。
+
 
 
 
