@@ -3,15 +3,22 @@ import logging
 
 import random
 
-logger = getLogger(__name__)
-logger.setLevel(INFO)
+import logging.config
 
-# ログのフォーマットを設定
-logging.basicConfig(  
-    level=INFO,  # ログレベルを設定
-    format='%(asctime)s - %(levelname)s - %(message)s',  # 時間とログレベルを含むフォーマット
-    datefmt='%Y-%m-%d %H:%M:%S'  # 日付と時間のフォーマット
-)
+# Load configuration from file
+logging.config.fileConfig('./logging.config')
+
+logger = getLogger(__name__)
+
+# logger.setLevel(INFO)
+
+# # ログのフォーマットを設定
+# logging.basicConfig(  
+#     level=INFO,  # ログレベルを設定
+#     format='%(asctime)s - %(levelname)s - %(message)s',  # 時間とログレベルを含むフォーマット
+#     datefmt='%Y-%m-%d %H:%M:%S'  # 日付と時間のフォーマット
+# )
+
 
 def __sleep_for_a_miliseconds(seconds: int):
     import time
@@ -34,7 +41,7 @@ def __dummy_log_printer(msg: str):
 
 def main():
     logger.info("starting dummy log generator!")
-    __number_of_logs = 20
+    __number_of_logs = 200000
     for i in range(__number_of_logs):
         _next_interval = __generate_next_interval()
         __dummy_log_printer(f"dummy log {i} : wait for {_next_interval} ms")
