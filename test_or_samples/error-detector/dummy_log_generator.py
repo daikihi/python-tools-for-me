@@ -22,6 +22,7 @@ def __generate_next_interval():
     _end = 1000
     return random.randint(_start, _end)
 
+# log レベルをランダムにしてログを出力する
 def __dummy_log_printer(msg: str):
     _log_type = random.randint(0, 2)
     if _log_type == 0:
