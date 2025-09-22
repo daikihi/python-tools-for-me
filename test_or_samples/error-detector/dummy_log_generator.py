@@ -10,16 +10,6 @@ logging.config.fileConfig('./logging.config')
 
 logger = getLogger(__name__)
 
-# logger.setLevel(INFO)
-
-# # ログのフォーマットを設定
-# logging.basicConfig(  
-#     level=INFO,  # ログレベルを設定
-#     format='%(asctime)s - %(levelname)s - %(message)s',  # 時間とログレベルを含むフォーマット
-#     datefmt='%Y-%m-%d %H:%M:%S'  # 日付と時間のフォーマット
-# )
-
-
 def __sleep_for_a_miliseconds(seconds: int):
     import time
     time.sleep(seconds)
