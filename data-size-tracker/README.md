@@ -8,8 +8,11 @@
 - 実行時刻とともにCSVファイルに追記（履歴を保持）
 - ファイルアクセス不可の場合はスキップして続行
 - コンソールに計測結果を表示
+- **ログデータを折れ線グラフで可視化**
 
 ## 使い方
+
+### ログに記録
 
 ```bash
 # 基本的な使用方法
@@ -18,6 +21,25 @@ python main.py /path/to/target/directory
 # ログファイル名を指定する場合
 python main.py /path/to/target/directory ./custom_log.csv
 ```
+
+### グラフで可視化
+
+蓄積されたログデータをグラフ化して表示します。
+
+```bash
+# デフォルトのログファイル (size_log.csv) をグラフ化
+python main.py --plot
+
+# カスタムログファイルをグラフ化
+python main.py --plot ./custom_log.csv
+```
+
+**グラフの特徴：**
+- 時系列順のデータプロット
+- X軸：タイムスタンプ、Y軸：データサイズ（MB）
+- グリッド表示で時系列が明確
+- Y軸は0から開始（データの変動を正確に表示）
+- PNG形式で保存（`size_trend.png`）
 
 ## ログファイル形式
 
@@ -55,6 +77,17 @@ python main.py ~/Documents
   ファイル数: 150
   合計サイズ: 1024.00 MB (1073741824 bytes)
   対象ディレクトリ: /path/to/directory
+```
+
+## 依存関係
+
+- Python 3.6以上
+- **matplotlib** - グラフ出力機能で使用
+
+### インストール
+
+```bash
+pip install matplotlib
 ```
 
 ## テスト
