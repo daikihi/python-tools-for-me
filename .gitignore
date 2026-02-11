@@ -22,3 +22,7 @@ build/
 # VSCode specific
 .vscode/
 .env
+.venv/
+
+test_or_samples/error-detector/error_samples/
+error_samples/
